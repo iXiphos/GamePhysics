@@ -15,6 +15,8 @@ public class Particle2D : MonoBehaviour
     public Vector2 topLeft;
     public Vector2 bottomRight;
 
+    public float radius;
+
     [HideInInspector]
     public BouyancyForceGenerator mBouyancyForce;
 

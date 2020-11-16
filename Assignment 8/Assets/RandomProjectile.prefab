@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2820229867593839030}
   - component: {fileID: 2820229867593839031}
   m_Layer: 0
-  m_Name: Bullet
-  m_TagString: PlayerProjectile
+  m_Name: RandomProjectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +101,6 @@ MonoBehaviour:
   DampingConstant: 0.999
   shouldIgnoreForces: 0
   shouldIgnoreBouyancy: 0
-  topLeft: {x: -8.918333, y: 4.889114}
-  bottomRight: {x: 8.97, y: -4.99}
-  radius: 0
+  topLeft: {x: -10, y: 12}
+  bottomRight: {x: 10, y: -6}
+  radius: 0.5

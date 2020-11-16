@@ -15,12 +15,15 @@ public class TargetSpawn : MonoBehaviour
             {
                 if (GameManager.Instance.mObjects[i] != null)
                 {
-                    GameObject projectile = GameManager.Instance.mObjects[i].gameObject;
-                    float distance = Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), new Vector2(projectile.gameObject.transform.position.x, projectile.gameObject.transform.position.y));
-                    if (distance < radius)
+                    if (GameManager.Instance.mObjects[i].tag == "PlayerProjectile")
                     {
-                        Destroy(gameObject);
-                        break;
+                        GameObject projectile = GameManager.Instance.mObjects[i].gameObject;
+                        float distance = Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), new Vector2(projectile.gameObject.transform.position.x, projectile.gameObject.transform.position.y));
+                        if (distance < radius)
+                        {
+                            Destroy(gameObject);
+                            break;
+                        }
                     }
                 }
             }
